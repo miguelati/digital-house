@@ -65,3 +65,6 @@ yarn-error.log
 # Yarn
 .yarn/*
 yarn.lock
+
+# vscode
+.vscode
