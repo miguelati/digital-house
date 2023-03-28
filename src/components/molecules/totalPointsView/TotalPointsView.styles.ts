@@ -3,7 +3,7 @@ import {moderateScale} from 'react-native-size-matters';
 import {Colors} from '~/themes';
 
 export const style = StyleSheet.create({
-  mainContainer: {height: 203, width: '100%'},
+  mainContainer: {height: 'auto', width: '100%'},
   subTitleContainer: {margin: 20, height: 20},
   pointsContainer: {alignItems: 'center', justifyContent: 'center'},
   container: {
