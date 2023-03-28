@@ -1,0 +1,1 @@
+export {TotalPointsView} from './TotalPointsView';
