@@ -7,8 +7,9 @@ import {style} from './MovementRow.styles';
 
 const MovementRow = ({movement, onPress}: Components.MovementRowProps) => {
   const {product, image, is_redemption, points, createdAt} = movement;
+  const onPressHandler = () => onPress(movement);
   return (
-    <TouchableOpacity onPress={onPress}>
+    <TouchableOpacity onPress={onPressHandler}>
       <View style={style.mainContainer}>
         <View style={style.imageContainer}>
           <Image style={style.image} source={{uri: image}} />
