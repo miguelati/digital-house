@@ -20,4 +20,8 @@ export const configureClient: (configuration: ConfigurationOptions) => void = ({
   );
 };
 
+export const enum ApiFetchNames {
+  products = 'fetchProducts',
+}
+
 export default client;

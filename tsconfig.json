@@ -5,7 +5,8 @@
     "paths": {"~/*": ["./src/*"]},
 
     /* Completeness */
-    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
+    "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
+    "isolatedModules": false,
   },
   "exclude": ["node_modules"]
 }

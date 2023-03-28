@@ -1,4 +1,18 @@
 {
   "preset": "react-native",
-  "setupFilesAfterEnv": ["@testing-library/jest-native/extend-expect"]
+  "moduleFileExtensions": [
+    "ts",
+    "tsx",
+    "js",
+    "jsx",
+    "json",
+    "node"
+  ],
+  "setupFilesAfterEnv": ["<rootDir>/src/__mocks__/axios.ts", "<rootDir>/src/__mocks__/react-query.ts"],
+  "transformIgnorePatterns": [
+    "node_modules/(?!((jest-)?react-native(-.*)?|@react-native(-community)?)/)"
+  ],
+  "transform": {
+    "^.+\\.tsx?$": "babel-jest"
+  }
 }
