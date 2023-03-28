@@ -9,7 +9,7 @@ const Label = ({
   ...props
 }: Components.LabelProps) => {
   return (
-    <Text style={[style, Fonts[variant]]} {...props}>
+    <Text {...props} style={[style, Fonts[variant]]}>
       {children}
     </Text>
   );
