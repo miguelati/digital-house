@@ -2,7 +2,7 @@ import React from 'react';
 import {render} from '@testing-library/react-native';
 import {WelcomeView} from './WelcomeView';
 
-describe('COMPONENTS::LABEL', () => {
+describe('COMPONENTS::WELCOME_VIEW', () => {
   it('renders correctly', () => {
     const user = 'Ruben Rodriguez';
     const {getByText} = render(<WelcomeView user={user} />);

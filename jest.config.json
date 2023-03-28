@@ -8,7 +8,7 @@
     "json",
     "node"
   ],
-  "setupFilesAfterEnv": ["<rootDir>/src/__mocks__/axios.ts", "<rootDir>/src/__mocks__/react-query.ts"],
+  "setupFilesAfterEnv": ["<rootDir>/src/__mocks__/axios.ts", "<rootDir>/src/__mocks__/react-query.ts", "<rootDir>/src/__mocks__/react-native-localize.ts", "<rootDir>/src/__mocks__/svg.ts"],
   "transformIgnorePatterns": [
     "node_modules/(?!((jest-)?react-native(-.*)?|@react-native(-community)?)/)"
   ],

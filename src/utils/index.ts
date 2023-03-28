@@ -1,0 +1,1 @@
+export {dateFormatShort} from './date';
