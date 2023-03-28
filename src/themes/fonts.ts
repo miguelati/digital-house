@@ -13,6 +13,7 @@ export const Fonts = StyleSheet.create({
     fontWeight: '400',
     fontSize: moderateScale(20),
     fontFamily: 'Avenir',
+    color: Colors.black,
   },
   subTitle: {
     fontWeight: '800',
@@ -25,6 +26,12 @@ export const Fonts = StyleSheet.create({
     fontSize: moderateScale(24),
     fontFamily: 'Avenir',
     color: Colors.black,
+  },
+  monthPoints: {
+    fontWeight: '800',
+    fontSize: moderateScale(16),
+    fontFamily: 'Avenir',
+    color: Colors.white,
   },
   bigPoints: {
     fontWeight: '800',
