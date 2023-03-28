@@ -4,7 +4,7 @@ import {Label} from '~/components/atoms/label';
 import {MovementRow} from '~/components/molecules/movementRow';
 import {style} from './MovementList.styles';
 
-const MovementList = ({movements}: Components.MovementListProps) => {
+const MovementList = ({movements, onPress}: Components.MovementListProps) => {
   return (
     <View style={style.container}>
       <Label style={style.subTitle} variant="subTitle">
@@ -15,7 +15,7 @@ const MovementList = ({movements}: Components.MovementListProps) => {
         data={movements}
         contentContainerStyle={style.flatListContent}
         renderItem={({item}) => (
-          <MovementRow movement={item} onPress={() => {}} />
+          <MovementRow movement={item} onPress={onPress} />
         )}
       />
     </View>
