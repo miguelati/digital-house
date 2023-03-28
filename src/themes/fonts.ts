@@ -61,7 +61,7 @@ export const Fonts = StyleSheet.create({
     fontWeight: '800',
     fontSize: moderateScale(16),
     fontFamily: 'Avenir',
-    color: Colors.black,
+    color: Colors.white,
   },
   productName: {
     fontWeight: '800',
