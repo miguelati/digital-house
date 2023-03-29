@@ -2626,6 +2626,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/lodash.capitalize@npm:^4.2.7":
+  version: 4.2.7
+  resolution: "@types/lodash.capitalize@npm:4.2.7"
+  dependencies:
+    "@types/lodash": "*"
+  checksum: dab8b781d7dcc56c18ba0c8286a6ccb61cc598d936a449265453a473e62b2b6d7c109c4447dfeb8ccacc4088769bc3bfd0d39bc8797f03e4e685d4f4b1bc7c01
+  languageName: node
+  linkType: hard
+
+"@types/lodash@npm:*":
+  version: 4.14.192
+  resolution: "@types/lodash@npm:4.14.192"
+  checksum: 31e1f0543a04158d2c429c45efd7c77882736630d0652f82eb337d6159ec0c249c5d175c0af731537b53271e665ff8d76f43221d75d03646d31cb4bd6f0056b1
+  languageName: node
+  linkType: hard
+
 "@types/node@npm:*":
   version: 18.15.10
   resolution: "@types/node@npm:18.15.10"
@@ -4345,6 +4361,7 @@ __metadata:
     "@testing-library/react-native": ^12.0.1
     "@tsconfig/react-native": ^2.0.2
     "@types/jest": ^29.5.0
+    "@types/lodash.capitalize": ^4.2.7
     "@types/react": ^18.0.24
     "@types/react-test-renderer": ^18.0.0
     "@typescript-eslint/eslint-plugin": ^5.56.0
