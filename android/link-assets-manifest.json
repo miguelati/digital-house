@@ -2,8 +2,12 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "src/assets/fonts/Avenir-Regular.ttf",
-      "sha1": "6807204b5d913f8bf5d3daf5ddeeedb732c5adc1"
+      "path": "src/assets/fonts/AvenirLTStd-Black.otf",
+      "sha1": "eb534ac4079db239cdd489df7a1aa2b874b5b599"
+    },
+    {
+      "path": "src/assets/fonts/AvenirLTStd-Book.otf",
+      "sha1": "db6bfde1c5f1f6d8129df5dce9484d88d3646f0d"
     }
   ]
 }

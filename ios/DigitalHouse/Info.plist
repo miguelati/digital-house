@@ -53,7 +53,8 @@
 	<false/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Avenir-Regular.ttf</string>
+		<string>AvenirLTStd-Black.otf</string>
+		<string>AvenirLTStd-Book.otf</string>
 	</array>
 </dict>
 </plist>
