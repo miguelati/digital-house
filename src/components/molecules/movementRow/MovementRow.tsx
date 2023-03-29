@@ -1,11 +1,11 @@
 import {Image, TouchableOpacity, View} from 'react-native';
-import React from 'react';
+import React, {memo} from 'react';
 import {Label} from '~/components/atoms/label';
 import {dateFormatShort} from '~/utils';
 import Arrow from '~/assets/svg/arrow.svg';
 import {style} from './MovementRow.styles';
 
-const MovementRow = ({movement, onPress}: Components.MovementRowProps) => {
+const MovementRow = memo(({movement, onPress}: Components.MovementRowProps) => {
   const {product, image, is_redemption, points, createdAt} = movement;
   const onPressHandler = () => onPress(movement);
   return (
@@ -32,6 +32,6 @@ const MovementRow = ({movement, onPress}: Components.MovementRowProps) => {
       </View>
     </TouchableOpacity>
   );
-};
+});
 
 export {MovementRow};
