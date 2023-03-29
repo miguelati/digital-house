@@ -2,7 +2,7 @@ import React from 'react';
 import {render} from '@testing-library/react-native';
 import {FilterView} from './FilterView';
 
-describe('COMPONENTS::WELCOME_VIEW', () => {
+describe('COMPONENTS::FILTER_VIEW', () => {
   it('renders correctly without filter', () => {
     const {getByText} = render(
       <FilterView isFiltered={false} onPress={() => {}} />,
