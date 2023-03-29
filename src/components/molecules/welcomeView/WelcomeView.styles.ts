@@ -7,6 +7,6 @@ export const style = StyleSheet.create({
     width: '100%',
     alignContent: 'center',
     marginLeft: 20,
-    marginTop: 27,
+    marginTop: 0,
   },
 });
