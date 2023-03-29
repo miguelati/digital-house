@@ -8,14 +8,14 @@ import {FilterView, FilterType} from '~/components/organism/filterView';
 import {useHome} from './Home.presenter';
 
 const Home = ({navigation}: HomeScreenProps) => {
-  const {data, totalPoints, onFilterChange, filter, onSelectMovement} =
+  const {movements, totalPoints, onFilterChange, filter, onSelectMovement} =
     useHome(navigation);
 
   return (
     <SafeAreaView style={style.container}>
       <WelcomeView user="Ruben Rodriguez" />
       <TotalPointsView points={totalPoints} month="Diciembre" />
-      <MovementList movements={data || []} onPress={onSelectMovement} />
+      <MovementList movements={movements || []} onPress={onSelectMovement} />
       <FilterView
         isFiltered={filter !== FilterType.ALL}
         onPress={onFilterChange}

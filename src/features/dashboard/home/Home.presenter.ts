@@ -18,11 +18,20 @@ export const useHome = (navigation: HomeScreenProps) => {
     [data],
   );
 
+  const movements = useMemo(() => {
+    if (filter === FilterType.ALL) {
+      return data;
+    }
+    return data?.filter(
+      movement => movement.is_redemption === (FilterType.EXCHANGED === filter),
+    );
+  }, [data, filter]);
+
   const onFilterChange = (filterSelected: FilterType) =>
     setFilter(filterSelected);
 
   const onSelectMovement = (movement: ApiDataProducts) =>
     navigation.navigate('Details', {movement});
 
-  return {data, totalPoints, filter, onFilterChange, onSelectMovement};
+  return {movements, totalPoints, filter, onFilterChange, onSelectMovement};
 };
