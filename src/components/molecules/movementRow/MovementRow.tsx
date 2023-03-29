@@ -15,7 +15,9 @@ const MovementRow = ({movement, onPress}: Components.MovementRowProps) => {
           <Image style={style.image} source={{uri: image}} />
         </View>
         <View style={style.detailsContainer}>
-          <Label variant="productName">{product}</Label>
+          <Label variant="productName" numberOfLines={1} ellipsizeMode="tail">
+            {product}
+          </Label>
           <Label variant="productDate">{dateFormatShort(createdAt)}</Label>
         </View>
         <View style={style.pointsContainer}>

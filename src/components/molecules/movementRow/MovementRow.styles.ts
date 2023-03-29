@@ -7,13 +7,15 @@ export const style = StyleSheet.create({
     paddingHorizontal: 10,
     justifyContent: 'space-around',
   },
-  imageContainer: {width: 'auto'},
+  imageContainer: {flex: 2},
   image: {width: 55, height: 55, borderRadius: 10},
   detailsContainer: {
+    flex: 4,
     justifyContent: 'space-evenly',
     marginLeft: 10,
   },
   pointsContainer: {
+    flex: 2,
     flexDirection: 'row',
     margin: 10,
     alignItems: 'center',
@@ -21,7 +23,7 @@ export const style = StyleSheet.create({
   arrowContainer: {
     justifyContent: 'center',
     alignItems: 'center',
-    width: 'auto',
+    flex: 1,
   },
   arrow: {
     margin: 10,
