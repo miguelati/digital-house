@@ -9,9 +9,9 @@ export const style = StyleSheet.create({
   imageContainer: {
     width: 350,
     height: 350,
+    backgroundColor: Colors.white,
     marginVertical: 20,
     borderRadius: 10,
-    overflow: 'hidden',
     shadowColor: Colors.black,
     shadowOffset: {
       width: 0,
@@ -19,11 +19,11 @@ export const style = StyleSheet.create({
     },
     shadowOpacity: 0.5,
     shadowRadius: 4,
-
     elevation: 10,
   },
   image: {
     flex: 1,
+    borderRadius: 10,
   },
   labelDetails: {
     marginTop: 12,
