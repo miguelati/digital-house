@@ -1,1 +1,1 @@
-export {dateFormatShort} from './date';
+export {dateFormatShort, dateFormatLong} from './date';

@@ -57,6 +57,12 @@ export const Fonts = StyleSheet.create({
     fontFamily: 'Avenir',
     color: Colors.black,
   },
+  detailPointsText: {
+    fontWeight: '800',
+    fontSize: moderateScale(20),
+    fontFamily: 'Avenir',
+    color: Colors.black,
+  },
   buttonText: {
     fontWeight: '800',
     fontSize: moderateScale(16),
