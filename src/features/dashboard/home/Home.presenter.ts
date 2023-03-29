@@ -3,7 +3,7 @@ import {useProducts} from '~/api/products';
 
 import {FilterType} from '~/components/organism/filterView';
 
-export const useHome = () => {
+export const useHome = (navigation: HomeScreenProps) => {
   const [filter, setFilter] = useState<FilterType>(FilterType.ALL);
   const {data} = useProducts();
   const totalPoints = useMemo(
@@ -21,5 +21,8 @@ export const useHome = () => {
   const onFilterChange = (filterSelected: FilterType) =>
     setFilter(filterSelected);
 
-  return {data, totalPoints, filter, onFilterChange};
+  const onSelectMovement = (movement: ApiDataProducts) =>
+    navigation.navigate('Details', {movement});
+
+  return {data, totalPoints, filter, onFilterChange, onSelectMovement};
 };
